@@ -7,6 +7,10 @@ body {
   font-family: system-ui, sans-serif;
   color: black;
   background-color: white;
+  background-image: url(/images/pexels-lizhi-liang-734722063-18681609.jpg)  ;
+  background-repeat: no-repeat;
+  background-size: var(--largeur_image1) var(--hauteur_image1);
+  padding: 0;
 }
 
 nav {
@@ -16,10 +20,8 @@ nav {
   justify-content: center;
   padding: 0.5rem;
   justify-content: space-between;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
-  
- 
+  background-color: #eee,0.5;
+  height : var(--taille_nav);
 }
 
 
@@ -30,7 +32,7 @@ nav a {
   padding: 0.5rem;
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color: #f5f4f4;
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
@@ -57,7 +59,10 @@ nav a[aria-current='page']::after {
 }
 
 main {
-  padding: 1rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 h1 {
@@ -65,3 +70,15 @@ h1 {
   font-size: 1.5rem;
 }
 
+.title{
+  color: #eee;
+  padding: 15%;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+}
+
+#home {
+
+  height: var(--home_hauteur);
+}
