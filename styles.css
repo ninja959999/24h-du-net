@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
+ 
 }
-
+/* --- corp --- */
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
@@ -13,10 +14,28 @@ body {
   padding: 0;
 }
 
+.btn_vers_haut{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+
+.btn_vers_haut img {
+  width: 60px;
+  height: 60px;
+}
+
+/* --- barre nav --- */
 nav {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
   padding: 0.5rem;
   justify-content: space-between;
@@ -57,28 +76,105 @@ nav a:hover::after,
 nav a[aria-current='page']::after {
   width: 50%; 
 }
-
+/* --- corp page --- */
 main {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+flex: 1
 }
 
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
-
+/* --- var commune pour le titre principale --- */
 .title{
   color: #eee;
   padding: 15%;
   text-align: center;
   font-family: 'Cinzel', serif;
-  font-size: 40px;
+  font-size: 60px;
+  translate:( 25)
 }
-
+/* --- gere les dif zones de la page --- */
 #home {
 
   height: var(--home_hauteur);
+ 
 }
+
+#zone1 {
+
+  height: var(--home_hauteur2);
+  background-color: rgb(222, 244, 255);
+}
+
+
+
+/* --- bas de page --- */
+
+footer{
+height : var(--taille_footer);
+ border-top: #0a0a0a solid 10px;
+  background-color: rgb(8, 40, 82);
+  color: #eee;
+  text-decoration: none;
+
+}
+
+
+.footer-container{
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgb(5, 25, 52); 
+  color: #bdc3c7;
+  font-size:30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+ 
+}
+.footer h4 {
+  padding-left: 50px;
+}
+.footer-col ul{
+  list-style: none;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+.footer-col li {
+  text-align: left;
+}
+.footer-col ul li {
+  margin-bottom: 8px;
+
+}
+
+.footer-col ul li :hover {
+  color: rgb(112, 142, 241);
+  
+}
+
+.footer-col a {
+  color: #eee;
+  text-decoration: none; 
+}
+
+
+.titre-souligne {
+  border-bottom: 2px solid #ffffff; 
+  padding-bottom: 8px;
+  display: inline-block; 
+  margin-bottom: 12px;
+}
+
