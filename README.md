@@ -1,7 +1,4 @@
-Voici la version mise à jour du README.md intégrant des badges élégants avec les logos officiels pour chaque langage utilisé (HTML5, CSS3, JavaScript), ainsi que les badges pour le concours !
 
-Code Markdown à copier-coller dans ton README.md :
-Markdown
 # 🏰 Du pèlerinage au tourisme de masse : mille ans de visiteurs au Mont Saint-Michel
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
