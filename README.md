@@ -5,7 +5,7 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-> **Concours :** 24h pour le Net Plus Ultra ! (24ème édition)  
+> **Concours :** 24h pour le Net Plus Ultra ! (24ème édition)  2026
 > **Thème :** Du pèlerinage au tourisme de masse : mille ans de visiteurs au Mont Saint-Michel  
 
 ---
