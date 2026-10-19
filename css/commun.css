@@ -167,7 +167,8 @@ h1 {
 }
 /* --- gere les dif zones de la page --- */
 #home {
-  height: var(--home_hauteur);
+margin: 0;
+  height: calc(var(--hauteur_ecran) - var(--taille_nav));
  
 }
 
