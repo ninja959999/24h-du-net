@@ -1,21 +1,21 @@
 * {
     box-sizing: border-box;
- 
 }
+
 /* --- corp --- */
 body {
     margin: 0;
     font-family: system-ui, sans-serif;
     color: black;
     background-color: white;
-    background-image: url(/images/pexels-lizhi-liang-734722063-18681609.jpg)  ;
+    background-image: url(/images/pexels-lizhi-liang-734722063-18681609.jpg);
     background-repeat: no-repeat;
     background-size: var(--largeur_ecran) var(--hauteur_ecran);
     padding: 0;
     overflow-x: hidden;
 }
 
-#btn_vers_haut{
+#btn_vers_haut {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -30,7 +30,7 @@ body {
     pointer-events: none;
 }
 
-#btn_vers_haut.visible{
+#btn_vers_haut.visible {
     opacity: 1;
     pointer-events: auto;
 }
@@ -44,14 +44,13 @@ body {
 nav {
     display: flex;
     flex-wrap: wrap;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     padding: 0.5rem;
     justify-content: space-between;
     background-color: #eee,0.5;
-    height : var(--taille_nav);
+    height: var(--taille_nav);
 }
-
 
 nav a {
     display: inline-block;
@@ -71,20 +70,17 @@ nav a::after {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%); 
-    width: 0;                   
-    height: 3px;                
-    background-color: #aaa;     
-    transition: width 0.2s;     
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #aaa;
+    transition: width 0.2s;
 }
-
-
 
 nav a:hover::after,
 nav a[aria-current='page']::after {
-    width: 50%; 
+    width: 50%;
 }
-
 
 .lang-dropdown {
     position: relative;
@@ -95,7 +91,7 @@ nav a[aria-current='page']::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px; 
+    width: 30px;
     height: 30px;
     padding: 0;
     background-color: #ffffff;
@@ -110,19 +106,18 @@ nav a[aria-current='page']::after {
     background-color: #f1f1f1;
 }
 
-
 .lang-btn img.flag-icon {
     width: 30px;
     height: 30px;
-    border-radius: 50%; 
+    border-radius: 50%;
     object-fit: cover;
 }
 
 .lang-menu {
     display: none;
     position: absolute;
-    top: 100%; 
-    right: 0; 
+    top: 100%;
+    right: 0;
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -148,7 +143,6 @@ nav a[aria-current='page']::after {
     text-decoration: none;
     color: #333;
     cursor: pointer;
-
 }
 
 .lang-option:hover {
@@ -167,6 +161,7 @@ nav a[aria-current='page']::after {
 .goog-te-banner-frame {
     display: none !important;
 }
+
 /* --- corp page --- */
 main {
     top: 0;
@@ -182,8 +177,9 @@ h1 {
     font-size: 1.5rem;
     margin: 0;
 }
+
 /* --- var commune pour le titre principale --- */
-.title{
+.title {
     color: #eee;
     padding: 15%;
     text-align: center;
@@ -191,11 +187,11 @@ h1 {
     font-size: 57px;
     translate:( 25);
 }
+
 /* --- gere les dif zones de la page --- */
 #home {
     margin: 0;
     height: calc(var(--hauteur_ecran) - var(--taille_nav));
-   
 }
 
 #zone1 {
@@ -203,7 +199,7 @@ h1 {
     background-color: rgb(222, 244, 255);
 }
 
-#zone1-source{
+#zone1-source {
     padding-right: 50px;
     padding-left: 50px;
     height: var(--zone1_hauteur);
@@ -211,45 +207,50 @@ h1 {
 }
 
 
-/* --- bas de page --- */
 
-footer{
-    height : var(--taille_footer);
+
+
+/* --- bas de page --- */
+footer {
+    height: var(--taille_footer);
     border-top: #0a0a0a solid 10px;
     background-color: rgb(8, 40, 82);
     color: #eee;
     text-decoration: none;
 }
 
-
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-around;
     text-align: center;
     padding-top: 20px;
-    background-color: rgb(8, 40, 82); 
+    background-color: rgb(8, 40, 82);
     margin: 0 10px;
 }
 
 .footer-bottom {
     text-align: center;
     padding: 20px 0;
-    background-color: rgb(5, 25, 52); 
+    background-color: rgb(5, 25, 52);
     color: #bdc3c7;
-    font-size:30px;
+    font-size: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .footer h4 {
     padding-left: 50px;
 }
-.footer-col ul{
+
+.footer-col ul {
     list-style: none;
     min-width: 200px;
     margin-bottom: 30px;
 }
+
 .footer-col li {
     text-align: left;
 }
+
 .footer-col ul li {
     margin-bottom: 8px;
 }
@@ -260,13 +261,12 @@ footer{
 
 .footer-col a {
     color: #eee;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-
 .titre-souligne {
-    border-bottom: 2px solid #ffffff; 
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 8px;
-    display: inline-block; 
+    display: inline-block;
     margin-bottom: 12px;
 }
