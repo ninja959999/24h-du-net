@@ -5,16 +5,23 @@
 /* --- corp --- */
 body {
     margin: 0;
+    padding: 0;
     font-family: system-ui, sans-serif;
     color: black;
     background-color: white;
-    background-image: url(/images/pexels-lizhi-liang-734722063-18681609.jpg);
-    background-repeat: no-repeat;
-    background-size: var(--largeur_ecran) var(--hauteur_ecran);
-    padding: 0;
     overflow-x: hidden;
+    position: relative;
 }
-
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+   width: var(--largeur_ecran);
+    height: var(--hauteur_ecran);
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
 #btn_vers_haut {
     height: 100px;
     width: 100px;
