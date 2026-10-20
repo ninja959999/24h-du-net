@@ -101,3 +101,31 @@ window.addEventListener('scroll', () => {
     btn_haut.classList.remove('visible')
   }
 });
+
+const btn_mode_sombre = document.getElementById('btn_mode_sombre')
+
+const couleur_nav_jour = '#ffffff'
+const couleur_nav_nuit = '#c2c2c2'
+
+const couleur_background1_jour = 'rgb(248, 248, 248)'
+const couleur_background1_nuit = 'rgb(134, 134, 134)'
+
+var couleur_nav_actuelle = '#ffffff'
+var couelur_background1_actuelle = 'rgb(248, 248, 248)'
+
+btn_mode_sombre.addEventListener('click', () => {
+  if (couleur_nav_actuelle === couleur_nav_jour) {
+    couleur_nav_actuelle = couleur_nav_nuit
+  } else {
+    couleur_nav_actuelle = couleur_nav_jour
+  }
+
+  if (couelur_background1_actuelle === couleur_background1_jour) {
+    couelur_background1_actuelle = couleur_background1_nuit
+  } else {
+    couelur_background1_actuelle = couleur_background1_jour
+  }
+
+  document.documentElement.style.setProperty('--couleur_nav', couleur_nav_actuelle)
+  document.documentElement.style.setProperty('--couleur_background1', couelur_background1_actuelle)
+})

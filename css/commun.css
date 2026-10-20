@@ -102,7 +102,7 @@ nav a {
 }
 
 nav.scrolled {
-    background-color: #ffffff;
+    background-color: var(--couleur_nav);
     backdrop-filter: none;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
@@ -113,6 +113,18 @@ nav.scrolled a {
 
 nav.scrolled a::after {
     background-color: #111111;
+}
+
+#btn_mode_sombre {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    cursor: pointer;
+}
+
+#btn_mode_sombre img { 
+    height: 30px;
+    width: 30px;
 }
 
 .lang-dropdown {
@@ -129,7 +141,7 @@ nav.scrolled a::after {
     height: 30px;
     padding: 0;
   
-    background-color: #ffffff;
+    background-color: var(--couleur_nav);
     border: 1px solid #ccc;
     border-radius: 50%;
     cursor: pointer;
@@ -153,7 +165,7 @@ nav.scrolled a::after {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #ffffff;
+    background-color: var(--couleur_nav);
     border: 1px solid #ccc;
     border-radius: 8px;
     min-width: 140px;
@@ -258,7 +270,7 @@ h1 {
 
 #zone1 {
     height: var(--zone1_hauteur);
-    background-color: rgb(248, 248, 248);
+    background-color: var(--couleur_background1);
 }
 
 
@@ -267,7 +279,7 @@ h1 {
     padding-left: 50px;
     padding-top: 60px;
    padding-bottom: 50PX;
-    background-color: rgb(251, 254, 255);
+    background-color: var(--couleur_background1);
 }
 
 
