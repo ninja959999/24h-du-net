@@ -195,9 +195,22 @@ h1 {
     color: #eee;
     padding: 15%;
     text-align: center;
-    font-family: 'Cinzel', serif;
-    font-size: 57px;
-    translate:( 25);
+    font-family: "Permanent Marker", cursive;
+    font-size: 52px;
+    font-weight: bold;
+    animation: apparition 0.5s ease-out;
+}
+
+
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-10px); 
+    }
 }
 
 /* --- gere les dif zones de la page --- */
