@@ -105,10 +105,10 @@ window.addEventListener('scroll', () => {
 const btn_mode_sombre = document.getElementById('btn_mode_sombre')
 
 const couleur_nav_jour = '#ffffff'
-const couleur_nav_nuit = '#c2c2c2'
+const couleur_nav_nuit = 'rgb(95, 93, 93)'
 
-const couleur_background1_jour = 'rgb(248, 248, 248)'
-const couleur_background1_nuit = 'rgb(134, 134, 134)'
+const couleur_background1_jour = 'rgb(250, 250, 250)'
+const couleur_background1_nuit = '#1f1d1d'
 
 var couleur_nav_actuelle = '#ffffff'
 var couelur_background1_actuelle = 'rgb(248, 248, 248)'
@@ -125,6 +125,9 @@ btn_mode_sombre.addEventListener('click', () => {
   } else {
     couelur_background1_actuelle = couleur_background1_jour
   }
+
+  const imgMode = document.querySelector('#btn_mode_sombre img');
+  imgMode.src = (couleur_nav_actuelle === couleur_nav_nuit) ? '/images/lune.png' : '/images/soleil.png';
 
   document.documentElement.style.setProperty('--couleur_nav', couleur_nav_actuelle)
   document.documentElement.style.setProperty('--couleur_background1', couelur_background1_actuelle)

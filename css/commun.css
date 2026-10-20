@@ -47,12 +47,12 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+    padding-right: 10px;
     z-index: 50;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
     height: var(--taille_nav);
 }
 
@@ -77,7 +77,6 @@ nav a::after {
     transform: translateX(-50%);
     width: 0;
     height: 3px;
-    background-color: #aaa;
     transition: width 0.2s;
 }
 
@@ -86,11 +85,7 @@ nav a[aria-current='page']::after {
     width: 50%;
 }
 
-.nav-link{
 
-    padding-right: 5%;
-
-}
 
 
 nav {
@@ -115,16 +110,21 @@ nav.scrolled a::after {
     background-color: #111111;
 }
 
-#btn_mode_sombre {
+#contaign {
     display: flex;
-    align-items: center;
-    justify-content: right;
     cursor: pointer;
 }
 
+.right-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    
+}
+
 #btn_mode_sombre img { 
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
 }
 
 .lang-dropdown {
