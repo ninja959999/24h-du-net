@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
+     scrollbar-width   :auto;
+    scrollbar-color: #0654bb #deF4ff;
 }
+
 
 /* --- corp --- */
 body {
@@ -49,7 +52,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem;
+
     height: var(--taille_nav);
 }
 
@@ -115,6 +118,7 @@ nav.scrolled a::after {
 .lang-dropdown {
     position: relative;
     display: inline-block;
+      padding-right:1% ;
 }
 
 .lang-btn {
@@ -124,6 +128,7 @@ nav.scrolled a::after {
     width: 30px;
     height: 30px;
     padding: 0;
+  
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 50%;
@@ -256,11 +261,13 @@ h1 {
     background-color: rgb(248, 248, 248);
 }
 
+
 #zone1-source {
     padding-right: 50px;
     padding-left: 50px;
-    height: var(--zone1_hauteur);
-    background-color: rgb(222, 244, 255);
+    padding-top: 60px;
+   padding-bottom: 50PX;
+    background-color: rgb(251, 254, 255);
 }
 
 

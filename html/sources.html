@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sources</title>
+    <title>Accueil</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="/css/sources.css" />
     <link rel="stylesheet" href="/css/commun.css" />
-    <script type="module" src="script.js"></script>
+
+    <script type="module" src="/script.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <link rel="icon" type="images/png " href="/images/france.png">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    </style>
+
+  
+  
   </head>
 
   <body>
+
+    <div id="btn_vers_haut">
+      <img src="/images/arrow_up.png" alt="fleche_haut">
+    </div>
 
     <nav>
       <a href="/">
@@ -20,7 +32,7 @@
       </a>
 
       <div class="nav-link">
-        <a href="/"><b>Accueil</a></a>
+        <a href="/"aria-current="page" ><b>Accueil</a></a>
         <a href="/html/histoire.html" >Histoire</a>
         <a href="/html/defis.html">défis</a>
       </div></b>
@@ -28,6 +40,7 @@
       <div class="lang-dropdown">
         <button class="lang-btn">
           <img src="https://flagcdn.com/w20/fr.png" alt="FR" class="flag-icon">
+
         </button>
 
         <div class="lang-menu">
@@ -62,10 +75,15 @@
 
     </nav>
 
-
-    
     <main>
       <div id="home">
+      
+      <video autoplay muted loop playsinline class="bg-video">
+  <source src="/images/12183564_3840_2160_60fps.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+</video>
+
+
         <h1 class="title"> Sources utilisées pour la réalisation de ce site </h1>
       </div>
 

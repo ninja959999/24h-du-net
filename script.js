@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
 const nav = document.querySelector("nav");
 const home = document.querySelector("#home");
 
