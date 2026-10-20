@@ -9,7 +9,7 @@ function image() {
     document.documentElement.style.setProperty('--largeur_image1', largeur_ecran + 'px');
     document.documentElement.style.setProperty('--hauteur_image1', hauteur_ecran + 'px');
     
-    document.documentElement.style.setProperty('--taille_nav', hauteur_ecran/10 + 'px');
+    document.documentElement.style.setProperty('--taille_nav', hauteur_ecran/11 + 'px');
     document.documentElement.style.setProperty('--taille_footer', hauteur_ecran/3 + 'px');
 
     document.documentElement.style.setProperty('--home_hauteur', hauteur_ecran*8.6/10 + 'px');
@@ -61,7 +61,22 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+const nav = document.querySelector("nav");
+const home = document.querySelector("#home");
 
+if (nav && home) {
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+            nav.classList.toggle("scrolled", !entry.isIntersecting);
+        },
+        {
+            rootMargin: `-${nav.offsetHeight}px 0px 0px 0px`,
+            threshold: 0
+        }
+    );
+
+    observer.observe(home);
+}
 
 
 
