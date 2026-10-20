@@ -79,6 +79,7 @@ nav a::after {
     width: 0;
     height: 3px;
     transition: width 0.2s;
+    background-color: #f5f4f4;
 }
 
 nav a:hover::after,
