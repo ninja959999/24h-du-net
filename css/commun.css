@@ -6,7 +6,30 @@
 }
 
 
-/* --- corp --- */
+/* S'assure que le bloc d'accueil/vidéo est toujours 100% visible par défaut */
+#home, #home * {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Applique l'effet d'apparition au scroll pour tout le reste de la page */
+body > *:not(#home), #zone1, #zone2, .card, .carte-mont, footer {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Révèle les éléments quand le JS ajoute la classe 'visible' */
+body > *.visible:not(#home), #zone1.visible, #zone2.visible, .card.visible, .carte-mont.visible, footer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
 body {
     margin: 0;
     padding: 0;
