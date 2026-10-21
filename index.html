@@ -25,7 +25,8 @@
   
   </head>
 
- <script>
+ 
+<script>
   window.addEventListener('DOMContentLoaded', () => {
     // On sélectionne tous les éléments SAUF #home et ses enfants
     const elements = document.querySelectorAll('body > *:not(#home), #zone1, #zone2, .card, .carte-mont, footer');
@@ -41,6 +42,8 @@
     elements.forEach(el => observer.observe(el));
   });
 </script>
+
+
   <body>
 
     <div id="btn_vers_haut">
