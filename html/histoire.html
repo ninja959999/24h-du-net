@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="/css/commun.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/histoire.css" />
     
 
     <script type="module" src="/script.js"></script>
@@ -18,22 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
   </head>
 
-   <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    // On sélectionne tous les éléments SAUF #home et ses enfants
-    const elements = document.querySelectorAll('body > *:not(#home), #zone1, #zone2, .card, .carte-mont, footer');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    elements.forEach(el => observer.observe(el));
-  });
-</script>
 
 
   <body>
@@ -128,8 +113,52 @@
 
 
       <div id="zone1">
-        <h2>Le Mont-Saint-Michel Aujourd'hui</h2>
-      </div>
+        
+<div id="wrapTimeline">
+<div class="timeline">
+
+    <div class="timeline-item">
+        <div class="timeline-content">
+            <div class="timeline-date">708</div>
+            <div class="timeline-title">construction de l’eglise </div>
+            <div class="timeline-text">construction de l’eglise notre dame sous terre a l’honneur de l’archange micheal</div>
+        </div>
+        <div class="timeline-image">
+    <img src="/images/eglise.jpg" alt="Illustration">
+  </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-content">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-title">Premiers utilisateurs</div>
+            <div class="timeline-text">Votre projet commence à prendre vie avec ses premiers visiteurs.</div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-content">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-title">Croissance</div>
+            <div class="timeline-text">Amélioration du design et ajout de nouvelles fonctionnalités.</div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-content">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-title">Succès</div>
+            <div class="timeline-text">Le projet atteint une audience large et fidèle.</div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+
+
+
     </main>
 
 

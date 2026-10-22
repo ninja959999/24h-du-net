@@ -24,23 +24,7 @@
   
   </head>
 
-   <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    // On sélectionne tous les éléments SAUF #home et ses enfants
-    const elements = document.querySelectorAll('body > *:not(#home), #zone1, #zone2, .card, .carte-mont, footer');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    elements.forEach(el => observer.observe(el));
-  });
-</script>
-
+ 
 
   <body>
 
