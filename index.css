@@ -39,7 +39,7 @@
 
 
 .card-container {
-
+margin-right: 10px;
   background: linear-gradient(135deg, #4d8b95 0%, #2e5f68 100%);
   color: #ffffff;
   border-radius: 20px;
