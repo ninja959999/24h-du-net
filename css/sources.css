@@ -27,6 +27,17 @@ transform: scale(1.1)
   z-index: 1;    
  
 }
+
+.image-fond1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:55%;
+ 
+  z-index: 1;    
+ 
+}
 .contenu-carte {
   position: absolute;
   bottom: 0;
