@@ -1,10 +1,11 @@
-#zone1 h2{
+#zone1 .mini-title{
      font-size:50px; 
      text-align:  center;
      font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-weight: bold;
  padding-top: 5%;
+ color: #0c0c0c;
  
 }
 
@@ -16,8 +17,10 @@
 }
 
 #zone2 {
-    height: var(--zone1_hauteur);
-    background-color: var(--couleur_background1);
+  height: var(--zone1_hauteur);
+  background-color: var(--couleur_background1);
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 .conteneur-zone2{
