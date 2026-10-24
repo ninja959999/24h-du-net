@@ -256,12 +256,12 @@ h1 {
 }
 
 .mini-title{
-    color: var(--couleur_nav_font);
+    color: #000000;
     text-align: center;
     font-size: 50px;
     font-weight: bold;
     animation: apparition 0.5s ease-out;
-    font-family: "Share Tech", sans-serif;
+font-family: "Share Tech", sans-serif;
 }
 
 

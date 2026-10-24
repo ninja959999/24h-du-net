@@ -1,12 +1,12 @@
-#zone1 .mini-title{
-     font-size:50px; 
-     text-align:  center;
-     font-family: "Patrick Hand", cursive;
+.mini-title{
+  font-size:50px; 
+  text-align:  center;
+  font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-weight: bold;
- padding-top: 5%;
- color: #0c0c0c;
- 
+  padding-top: 5%;
+  color: var(--couleur_nav_font);
+  
 }
 
 .conteneur-zone1{
