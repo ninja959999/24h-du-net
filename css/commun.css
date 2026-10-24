@@ -238,7 +238,18 @@ h1 {
 .title {
     color: #eee;
     text-align: center;
+     font-size: 50px;
     font-family: 'Great Vibes', cursive;
+  font-weight: bold;
+    font-weight: bold;
+    animation: apparition 0.5s ease-out;
+}
+
+.title1 {
+    color: #eee;
+    text-align: center;
+     font-size: 50px;
+   font-family: "Share Tech", sans-serif;
   font-weight: bold;
     font-weight: bold;
     animation: apparition 0.5s ease-out;
