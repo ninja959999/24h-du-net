@@ -103,6 +103,8 @@ const couleur_nav_nuit = 'rgb(95, 93, 93)';
 const couleur_background1_jour = 'rgb(250, 250, 250)';
 const couleur_background1_nuit = '#1f1d1d';
 
+const couleur_nav_font_jour = '#000000';
+const couleur_nav_font_nuit = '#FFFFFF';
 
 let estEnModeNuit = false;
 
@@ -117,7 +119,7 @@ btn_mode_sombre.addEventListener('click', () => {
 
     const couleurNavActuelle = estEnModeNuit ? couleur_nav_nuit : couleur_nav_jour;
     const couleurBgActuelle = estEnModeNuit ? couleur_background1_nuit : couleur_background1_jour;
-
+    const couleurNavFontActuelle = estEnModeNuit ? couleur_nav_font_nuit : couleur_nav_font_jour
 
     const imgMode = document.querySelector('#btn_mode_sombre img');
     imgMode.src = estEnModeNuit ? '/images/lune.png' : '/images/soleil.png';
@@ -125,4 +127,5 @@ btn_mode_sombre.addEventListener('click', () => {
 
     document.documentElement.style.setProperty('--couleur_nav', couleurNavActuelle);
     document.documentElement.style.setProperty('--couleur_background1', couleurBgActuelle);
+    document.documentElement.style.setProperty('--couleur_nav_font', couleurNavFontActuelle);
 });

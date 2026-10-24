@@ -17,8 +17,7 @@
 }
 
 #zone2 {
-  padding-top: 15px;
-   border-top: #a09e9e solid 0.5px;
+
   height: var(--zone1_hauteur ) + 100PX;
   background-color: var(--couleur_background1);
   transition-property: background-color;
@@ -26,10 +25,11 @@
 }
 
 #zone3{
-  border-top: #a09e9e solid 0.5px;
+  border-top: var(--couleur_background1) solid 0.5px;
   height: var(--zone1_hauteur);
   background-color: var(--couleur_background1);
   transition-property: background-color;
+  justify-content: space-between;
   transition-duration: 0.5s;
 }
 
@@ -37,17 +37,17 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 50px;
+  margin: 50px 50px 0 50px;
 }
 
 .conteneur-zone2 .parking{
-  height: 320px;
+  height: 500px;
+  width: 800px;
   border-radius: 20px;
   border: #4d8b95 solid 2px; 
 
 }
 .conteneur-zone3{
-
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -78,7 +78,7 @@ margin-right: 10px;
 }
 
 .card-container1{
-margin-left: 20px;
+  margin-left: 20px;
   background: linear-gradient(135deg, #4d8b95 0%, #2e5f68 100%);
   color: #ffffff;
   border-radius: 20px;
@@ -139,8 +139,8 @@ width: 60px;
 /* From Uiverse.io by gharsh11032000 */ 
 .card {
   position: relative;
-  width: 400px;
-  height: 300px;
+  width: 375px;
+  height: 280px;
   background-color: #f2f2f2;
   border-radius: 10px;
   display: flex;
@@ -153,7 +153,7 @@ width: 60px;
 }
 
 .card img {
-  width: 120%;
+  width: 140%;
   fill: #333;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -223,7 +223,7 @@ width: 60px;
   height: 420px;
   border-radius: 20px;
   overflow: hidden;
-  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80');
+ background: url(/images/histoire.jpg);
   background-size: cover;
   background-position: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
@@ -238,13 +238,19 @@ width: 60px;
   height: 420px;
   border-radius: 20px;
   overflow: hidden;
-  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80');
+  background-image: url('/images/touriste.jpg');
   background-size: cover;
   background-position: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: flex-end;
   font-family: system-ui, -apple-system, sans-serif;
+}
+
+.hero-banner1 img {
+  
+  background-size: cover;
+  background-position: center;
 }
 
 .banner-overlay {
@@ -343,3 +349,12 @@ width: 60px;
   border: none;
 }
 
+.conteneur-meteo-embed {
+  width: 600px;
+  height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eef2f6;
+  background-color: #ffffff;
+}

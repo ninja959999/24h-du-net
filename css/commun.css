@@ -256,12 +256,12 @@ h1 {
 }
 
 .mini-title{
-    color: #000000;
+    color: var(--couleur_nav_font);
     text-align: center;
     font-size: 50px;
     font-weight: bold;
     animation: apparition 0.5s ease-out;
-font-family: "Share Tech", sans-serif;
+    font-family: "Share Tech", sans-serif;
 }
 
 
@@ -280,6 +280,9 @@ font-family: "Share Tech", sans-serif;
 #home {
     margin: 0;
     height: var(--hauteur_ecran);
+    background-image: url(/images/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative; 
     overflow: hidden;
 }
@@ -317,7 +320,8 @@ font-family: "Share Tech", sans-serif;
 #zone1 {
     height: var(--zone1_hauteur);
     background-color: var(--couleur_background1);
-
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
 
