@@ -106,13 +106,13 @@ const couleur_background1_nuit = "#2f3238"
 const couleur_nav_font_jour = "black"
 const couleur_nav_font_nuit = 'white'
 
-let estEnModeNuit = false;
+let estEnModeNuit = localStorage.getItem('darkMode') === 'true';
 
 
 document.documentElement.style.setProperty('--couleur_nav', couleur_nav_jour);
 document.documentElement.style.setProperty('--couleur_background1', couleur_background1_jour);
 
-btn_mode_sombre.addEventListener('click', () => {
+function changement_theme() {
 
     estEnModeNuit = !estEnModeNuit;
 
@@ -122,10 +122,19 @@ btn_mode_sombre.addEventListener('click', () => {
     const couleurNavFontActuelle = estEnModeNuit ? couleur_nav_font_nuit : couleur_nav_font_jour
 
     const imgMode = document.querySelector('#btn_mode_sombre img');
-    imgMode.src = estEnModeNuit ? '/images/lune.png' : '/images/soleil.png';
 
+    if (imgMode) {
+        imgMode.src = estEnModeNuit ? '/images/lune.png' : '/images/soleil.png';
+    }
 
     document.documentElement.style.setProperty('--couleur_nav', couleurNavActuelle);
     document.documentElement.style.setProperty('--couleur_background1', couleurBgActuelle);
     document.documentElement.style.setProperty('--couleur_nav_font', couleurNavFontActuelle);
+}
+
+changement_theme()
+
+btn_mode_sombre.addEventListener('click', () => {
+    localStorage.setItem('darkMode', estEnModeNuit);
+    changement_theme();
 });

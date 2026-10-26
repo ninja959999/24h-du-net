@@ -13,7 +13,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 50px;
+  margin: 100px;
 }
 
 #zone2 {
@@ -24,11 +24,12 @@
   transition-duration: 0.5s;
 }
 
+
 #zone3{
   border-top: var(--couleur_background1) solid 0.5px;
   height: var(--zone1_hauteur);
   background-color: var(--couleur_background1);
-  transition-property: background-color;
+  transition-property: background-color, border-top;
   justify-content: space-between;
   transition-duration: 0.5s;
 }
@@ -37,12 +38,12 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 50px 50px 0 50px;
 }
 
 .conteneur-zone2 .parking{
-  height: 500px;
-  width: 800px;
+  width: 47%;
   border-radius: 20px;
   border: #4d8b95 solid 2px; 
 
@@ -51,8 +52,9 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 50px;
+  margin: 200px 6%;
 }
+
 #zone2 h2{
      font-size:50px; 
      text-align:  center;
@@ -219,7 +221,7 @@ width: 60px;
 /* Container de la bannière / bloc d'affichage */
 .hero-banner1 {
   position: relative;
-  width: 620px;
+  width: 45%;
   height: 420px;
   border-radius: 20px;
   overflow: hidden;
@@ -234,7 +236,7 @@ width: 60px;
 
 .hero-banner2 {
   position: relative;
-  width: 620px;
+  width: 45%;
   height: 420px;
   border-radius: 20px;
   overflow: hidden;
