@@ -1,6 +1,6 @@
 #zone1 {
     height: var(--zone1_hauteur) +1PX;
-    background-color: rgb(248, 248, 248);
+    background-color: var(--couleur_background1);
 
 
 }
@@ -45,7 +45,7 @@
     content: '';
     position: absolute;
     width: 2px;
-    background: #2a2a2e;
+    background: var(--couleur_nav_font);
     top: 0;
     bottom: 0;
     left: 50%;
