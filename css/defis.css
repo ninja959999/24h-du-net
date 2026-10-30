@@ -74,6 +74,7 @@
 .card .card__btns a{
   display: flex;
   gap: 0.6rem;
+  text-decoration: none;
 }
 
 .card button {
@@ -147,3 +148,87 @@ width: 60px;
   color: #e2f1f4;
   margin: 0 0 24px 0;
 }
+
+
+.review-card {
+      background: #ffffff;
+      border: 1px solid #cecece;
+     
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+
+    .rating-circles {
+      display: flex;
+      gap: 6px;
+    }
+
+    .circle {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #0aa16a; 
+    }
+
+    .circle.empty {
+      background-color: transparent;
+      border: 2px solid #00aa6c;
+      box-sizing: border-box;
+    }
+
+    .date {
+      color: #333;
+      font-size: 14px;
+    }
+
+   
+    .title {
+      font-weight: 700;
+      font-size: 18px;
+      margin: 0 0 10px 0;
+      color: #111;
+    }
+
+    .text {
+      font-size: 16px;
+      color: #333;
+      margin: 0 0 16px 0;
+      line-height: 1.4;
+    }
+
+    .highlight {
+      font-weight: 700;
+    }
+
+   
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .author-name {
+      font-size: 15px;
+      color: #333;
+    }
+
+    
