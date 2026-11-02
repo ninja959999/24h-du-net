@@ -124,8 +124,9 @@ function changement_theme() {
     const imgMode = document.querySelector('#btn_mode_sombre img');
 
     if (imgMode) {
-        imgMode.src = estEnModeNuit ? '/images/lune.png' : '/images/soleil.png';
-    }
+    const chemin = window.location.pathname.includes('/html/') ? '../' : './';
+    imgMode.src = estEnModeNuit ? `${chemin}images/lune.png` : `${chemin}images/soleil.png`;
+}
 
     document.documentElement.style.setProperty('--couleur_nav', couleurNavActuelle);
     document.documentElement.style.setProperty('--couleur_background1', couleurBgActuelle);
