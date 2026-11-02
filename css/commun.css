@@ -280,7 +280,7 @@ font-family: "Share Tech", sans-serif;
 #home {
     margin: 0;
     height: var(--hauteur_ecran);
-    background-image: url(/images/fond.jpg);
+    background-image: url(./images/fond.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
