@@ -1,24 +1,20 @@
 #zone1 .mini-title{
-     font-size:30px; 
+     font-size:50px; 
      text-align:  center;
      font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-weight: bold;
  padding-top: 6%;
  padding-bottom: 2%;
- color: #0c0c0c;
+ color: var(--couleur_nav_font)
  
 }
 
-#zone1{
-  
-}
 
 .conteneur-zone1{
   display: flex;
-  justify-content: space-between;
-  position: relative;
-   margin: 10px;
+  justify-content: space-around;
+  margin: 40px;
 }
 
 /* From Uiverse.io by satyamchaudharydev */ 
@@ -107,11 +103,12 @@
 }
 
 .card-container {
-margin-right: 10px;
+  margin-right: 10px;
   background: linear-gradient(135deg, #4d8b95 0%, #2e5f68 100%);
   color: #ffffff;
   border-radius: 20px;
   padding: 32px;
+  position: relative;
   max-width: 820px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -119,10 +116,15 @@ margin-right: 10px;
  
 }
 
+.defi2 {
+  width: auto;
+  max-width: 620px;
+}
+
 .blason{
 position: absolute;
   top: -10px;                  
-  right: 57%;                
+  right: 95%;                
   height:60px;  
 width: 60px;
 
@@ -192,13 +194,6 @@ width: 60px;
       font-size: 14px;
     }
 
-   
-    .title {
-      font-weight: 700;
-      font-size: 18px;
-      margin: 0 0 10px 0;
-      color: #111;
-    }
 
     .text {
       font-size: 16px;

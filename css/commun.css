@@ -79,6 +79,7 @@ nav a {
 
 nav a::after {
     content: "";
+    color: var(--couleur_font);
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -112,11 +113,11 @@ nav.scrolled {
 }
 
 nav.scrolled a {
-    color: #111111;
+    color: var(--couleur_nav_font);
 }
 
 nav.scrolled a::after {
-    background-color: #111111;
+    background-color: var(--couleur_nav_font);
 }
 
 #contaign {
@@ -280,7 +281,7 @@ font-family: "Share Tech", sans-serif;
 #home {
     margin: 0;
     height: var(--hauteur_ecran);
-    background-image: url(./images/fond.jpg);
+    background-image: url(../images/fond.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
@@ -382,7 +383,7 @@ footer {
     margin-bottom: 8px;
 }
 
-.footer-col ul li :hover {
+.footer-col ul li a:hover {
     color: rgb(112, 142, 241);
 }
 
