@@ -161,7 +161,7 @@
 .footer {
     height: var(--taille_footer);
     border-top: #0a0a0a solid 10px;
-    background-color: rgb(8, 40, 82);
+    background-color: rgb(45, 90, 140);
     color: #eee;
     text-decoration: none;
 }
@@ -171,7 +171,7 @@
     justify-content: space-around;
     text-align: center;
     padding-top: 20px;
-    background-color: rgb(8, 40, 82);
+    background-color: rgb(45, 90, 140);
     margin: 0 10px;
 }
 
